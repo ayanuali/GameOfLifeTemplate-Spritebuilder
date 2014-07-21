@@ -78,14 +78,14 @@ static const int GRID_COLUMNS = 10;
     creature.isAlive = !creature.isAlive;
 }
 
-//- (Creature *)creatureForTouchPosition:(CGPoint)touchPosition
-//{
-//    int row = touchPosition.y/_cellHeight;
-//    int column = touchPosition.x/_cellWidth;
-//    //get the row and column that was touched, return the Creature inside the corresponding cell
-//    return _gridArray[row][column];
-//}
-//
+- (Creature *)creatureForTouchPosition:(CGPoint)touchPosition
+{
+    int row = touchPosition.y/_cellHeight;
+    int column = touchPosition.x/_cellWidth;
+    //get the row and column that was touched, return the Creature inside the corresponding cell
+    return _gridArray[row][column];
+}
+
 //-(void)evolveStep
 //{
 //    //update each Creature's neighbor count
