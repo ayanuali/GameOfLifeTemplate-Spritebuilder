@@ -10,12 +10,12 @@
 
 @interface Creature : CCSprite
 
-//store the current state of the creature
+// stores the current state of the creature
 @property (nonatomic, assign) BOOL isAlive;
 
-//store the amount of living neighbors
+// stores the amount of living neighbors
 @property (nonatomic, assign) NSInteger livingNeighbors;
 
--(id)initCreature;
+- (id)initCreature;
 
 @end
